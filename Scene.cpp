@@ -1,7 +1,5 @@
 
-#include <QGLShader>
 #include <QOpenGLVertexArrayObject>
-#include <QMessageBox>
 #include "Scene.h"
 
 Scene::Scene( QWidget *widget ) :
@@ -10,14 +8,12 @@ Scene::Scene( QWidget *widget ) :
     m_program = new QGLShaderProgram( this );
 }
 
-void Scene::slotSetBackground(const Color &color)
+void Scene::setBackground(const Color &color)
 {
     GLclampf red = static_cast<GLclampf>( color.getRed() );
     GLclampf green = static_cast<GLclampf>( color.getGreen() );
     GLclampf blue = static_cast<GLclampf>( color.getBlue() );
-
     glClearColor( red, green, blue, 1.0f );
-
     updateGL();
 }
 

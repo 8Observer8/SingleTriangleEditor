@@ -15,5 +15,5 @@ SceneWindow::~SceneWindow()
 
 void SceneWindow::slotSetSceneBackground( const Color &color )
 {
-    ui->sceneWidget->slotSetBackground( color );
+    ui->sceneWidget->setBackground( color );
 }

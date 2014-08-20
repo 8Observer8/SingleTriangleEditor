@@ -13,7 +13,7 @@ ControlWindow::~ControlWindow()
     delete ui;
 }
 
-void ControlWindow::on_setButton_clicked()
+void ControlWindow::on_setBgColorButton_clicked()
 {
     double red = ui->redDSpinBox->value();
     double green = ui->greenDSpinBox->value();

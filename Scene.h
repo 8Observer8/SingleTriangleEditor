@@ -10,8 +10,7 @@ class Scene : public QGLWidget
 public:
     Scene( QWidget *widget = 0 );
 
-public slots:
-    void slotSetBackground( const Color &color );
+    void setBackground( const Color &color );
 
 protected:
     void initializeGL();

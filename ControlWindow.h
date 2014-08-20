@@ -20,7 +20,7 @@ signals:
     void signalSetSceneBackground( const Color &color );
 
 private slots:
-    void on_setButton_clicked();
+    void on_setBgColorButton_clicked();
 
 private:
     Ui::ControlWindow *ui;
